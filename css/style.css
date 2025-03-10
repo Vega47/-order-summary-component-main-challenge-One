@@ -1,0 +1,133 @@
+/* body {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100vh;
+  margin-top: 0;
+  padding-top: 0;
+} */
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  width: 30%;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .image {
+  width: 100%;
+}
+.container .card .image img {
+  width: 100%;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.container .card .content {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .content h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.container .card .content p {
+  font-size: 16px;
+  font-weight: 700;
+  /* padding: 50px;
+  margin: 50px;
+  margin-block: 0;
+  padding-block: 0; */
+  width: 85%;
+  color: hsl(224, 23%, 55%);
+}
+.container .card .plan {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  width: 90%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.container .card .plan .inside-content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.container .card .plan .inside-content h5 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.container .card .plan .inside-content h6 {
+  font-size: 16px;
+  margin-top: 0;
+  color: hsl(224, 23%, 55%);
+}
+.container .card .buttons {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.container .card .buttons button:first-child {
+  padding: 18px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-weight: 900;
+  font-size: 16px;
+  background-color: hsl(245, 75%, 52%);
+  margin-bottom: 20px;
+}
+.container .card .buttons button:first-child:hover {
+  background-color: hsl(224, 23%, 55%);
+  transition: 0.5s;
+}
+.container .card .buttons button:last-child {
+  background-color: transparent;
+  border: none;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1440px) {
+  .container .card {
+    width: 90%;
+  }
+  .container {
+    background-image: none;
+  }
+}
