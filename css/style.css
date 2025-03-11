@@ -123,3 +123,11 @@ body {
   font-weight: 900;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1200px) {
+  .container .card {
+    width: 90%;
+  }
+  .container {
+    background-image: none;
+  }
+}
